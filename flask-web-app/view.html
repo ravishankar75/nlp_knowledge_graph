@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>View Nodes</title>
+</head>
+<body>
+    <h1>Knowledge Graph Nodes</h1>
+    <ul>
+        {% for node in nodes %}
+            <li>{{ node }}</li>
+        {% else %}
+            <li>No nodes in the knowledge graph.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
